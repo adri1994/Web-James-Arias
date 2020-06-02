@@ -1,0 +1,499 @@
+/*reglas
+selectores
+declaraciones
+propiedades
+valores*/
+
+body {
+  width: 100%;
+  font-family: "Raleway", sans-serif;
+  margin: 0px 0px;
+  padding: 0;
+}
+button {
+  cursor: pointer;
+}
+
+/*selector de etiqueta header body etc
+selector descendente --> doby header div nav ul li a
+selector de clases .nombredeclase ej .link
+selector de id --> #nombreid*/
+
+/*Typography*/
+.header {
+  width: 100%;
+  height: 90px;
+  background-color: white;
+  margin: 0em;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+.header a {
+  color: white;
+  text-decoration: none;
+  height: inherit;
+  display: flex;
+  align-items: center;
+}
+.global-menu {
+  height: inherit;
+  display: inline-block;
+}
+nav,
+h1,
+h3,
+h4 {
+  font-family: "Dancing Script", cursive;
+  font-weight: normal;
+  font-size: 40px;
+}
+.logo {
+  width: 148px;
+  height: inherit;
+  margin: 0px;
+  display: inline-block;
+}
+.logo-icon {
+  width: 146px;
+  height: 87.6px;
+  display: flex;
+  justify-content: space-between;
+}
+.menu {
+  font-size: 30px;
+  line-height: 1.5em;
+  font-weight: normal;
+  letter-spacing: -0.2px;
+  text-align: center;
+  display: inline-block;
+  margin: 0em;
+  height: inherit;
+}
+.menu-list {
+  margin: 0em;
+  width: fit-content;
+  height: inherit;
+}
+.menu-list li {
+  display: inline-block;
+  height: inherit;
+}
+.menu-list li a {
+  padding-right: 10px;
+  color: black;
+  background-color: transparent;
+  display: flex;
+  height: inherit;
+  align-items: center;
+}
+.menu-list li a:hover {
+  color: white;
+  background-color: gray;
+  margin-top: -2;
+  height: inherit;
+}
+.social {
+  display: flex;
+  margin-left: 15px;
+  height: inherit;
+}
+.social a {
+  display: flex;
+  padding-right: 10px;
+  margin-top: 16px;
+}
+.social-link {
+  width: 48px;
+  height: 48px;
+  /*border: 1px solid white;*/
+  align-items: center;
+}
+.social-link.youtube {
+  background-image: url("../Imagenes/youtube.svg");
+  background-size: 48px 48px;
+  background-repeat: no-repeat;
+}
+.social-link.instagram {
+  background-image: url("../Imagenes/instagram.svg");
+  background-size: 48px 48px;
+  background-repeat: no-repeat;
+}
+.social-link.facebook {
+  background-image: url("../Imagenes/facebook.svg");
+  background-size: 48px 48px;
+  background-repeat: no-repeat;
+}
+.social-link.linkedin {
+  background-image: url("../Imagenes/linkedin.svg");
+  background-size: 48px 48px;
+  background-repeat: no-repeat;
+}
+div.nav-search {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+form {
+  display: flex;
+  align-items: center;
+}
+div.input-container {
+  height: 40px;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(41, 39, 39, 0.884);
+  position: relative;
+  border-radius: 10px 10px 10px 10px;
+}
+div.input-container:hover {
+  box-shadow: 0 1px 6px 0 gray;
+}
+input.input {
+  height: 38px;
+  margin-left: 10px;
+  align-items: center;
+  outline: none;
+  border: none;
+  justify-content: center;
+}
+button.search-button {
+  width: 45px;
+  height: 40px;
+  background-image: url("../Imagenes/buscar.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #749fa8;
+  border-radius: 0px 10px 10px 0px;
+  border: none;
+}
+.hero {
+  width: 1519.2px;
+  height: 650px;
+  background-image: url("../Imagenes/prueba1.jpg");
+  background-size: 1519.2px 911px;
+  background-repeat: no-repeat;
+  margin-right: 0em;
+  border: 1px solid gray;
+}
+
+h1 {
+  width: fit-content;
+  font-size: 40px;
+  font-weight: 700;
+  font-style: italic;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0px 0px 20px 0px;
+  padding: 301px 0px 20px 460.1px;
+  color: white;
+}
+.hero-button {
+  text-transform: uppercase;
+  width: fit-content;
+  color: #ffffff;
+  letter-spacing: 1px;
+  background: #ffab3d;
+  border: none;
+  padding: 15px 25px;
+  margin: 10px 0px 0px 650.2px;
+  border-radius: 6px;
+  align-items: center;
+  justify-content: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+.hero-button a {
+  text-decoration: none;
+  color: #fff;
+  outline: none;
+}
+.hero-button:hover {
+  color: #fff;
+  border-color: none;
+  background: rgb(17, 134, 17);
+  box-shadow: 0 1px 6px 0 gray;
+}
+h2 {
+  color: white;
+  font-size: 30px;
+  font-weight: 500;
+  width: fit-content;
+  margin: 0em;
+  padding: 10px 0px 10px 310.28px;
+  text-align: center;
+}
+.recipes {
+  border: 3px solid transparent;
+  margin: 0px 20px;
+}
+.recipes-title {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  margin: 0em;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.recipesContainer {
+  display: flex;
+  justify-content: center;
+  background-color: whitesmoke;
+}
+.recipesContainer div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 379.99px;
+  height: 533.44px;
+  padding: 0px 20px 10px;
+}
+.recipesContainer div figure {
+  width: 355.99px;
+  height: 239.84px;
+  margin-block: 0px;
+}
+.recipesContainer div h4 {
+  text-align: center;
+  margin: 10px 0px;
+  height: 96px;
+}
+.recipesContainer div article {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.recipesContainer a {
+  color: white;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  background-color: gray;
+}
+
+.meat-recipes {
+  border: 0.5px solid transparent;
+  width: 379.99px;
+  height: 578px;
+  justify-content: center;
+  align-items: center;
+}
+figure.meat-recipes-imageContainer {
+  width: 355.99px;
+  height: 239.84px;
+  margin-block: 0px;
+}
+.meat-recipes-image {
+  width: 100%;
+  height: 100%;
+  background-image: url("../imagenes/Wagyu-y-Caviar-capanes.jpg");
+  background-size: cover;
+  margin: 0;
+  /*src= "imagenes/Wagyu-y-Caviar-capanes.jpg"*/
+}
+
+.fish-recipes {
+  border: 0.5px solid transparent;
+  width: 379.99px;
+  height: 578px;
+}
+.fish-recipes-image {
+  width: 100%;
+  height: 100%;
+  background-image: url("../imagenes/Pork-Belly--con-salsa-de-mostaza.jpg");
+  background-size: cover;
+  margin: 0;
+  /*src= "imagenes/Wagyu-y-Caviar-capanes.jpg"*/
+}
+.veggie-recipes {
+  border: 0.5px solid transparent;
+  width: 379.99px;
+  height: 578px;
+}
+.veggie-recipes-image {
+  width: 100%;
+  height: 100%;
+  background-image: url("../imagenes/parfait-de-chocolate-y-sorbete-de-mandarina.jpg");
+  background-size: cover;
+  margin: 0;
+  /*src= "imagenes/Wagyu-y-Caviar-capanes.jpg"*/
+}
+.video-recipes-title {
+  text-align: center;
+  padding: 30px 0px 20px;
+  margin: 0em;
+}
+.video-recipes {
+  margin: 0px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.video-recipes div h4 {
+  margin: 0em;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  text-align: center;
+}
+.video-recipes div article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.video-recipes a {
+  background-color: gray;
+  color: white;
+  text-decoration: none;
+}
+p.video-recipes-description {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.blog-title {
+  text-align: center;
+  padding: 30px 0px 20px;
+  margin: 0em;
+}
+.blog {
+  border: 1px solid transparent;
+  margin: 0px 20px;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  background-color: whitesmoke;
+}
+.blog a {
+  text-decoration: none;
+  color: white;
+  background-color: gray;
+}
+.blog h4 {
+  margin: 0px 0px 10px;
+}
+.blog figure {
+  width: 355.99px;
+  height: 239.84px;
+  margin-block: 0px;
+}
+.blog div {
+  display: flex;
+  justify-content: center;
+}
+.container-entrada {
+  width: 739.6px;
+  display: flex;
+  flex-direction: column;
+}
+.container-entrada-penultima {
+  width: 739.6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.link-entrada {
+  margin: 0px 0px 10px;
+}
+
+div .container-entrada-imagen {
+  width: 739.6px;
+  justify-content: center;
+  align-items: center;
+}
+div .container-entrada-imagen-penultima {
+  display: flex;
+  justify-content: flex-start;
+  width: 739.6px;
+  align-item: flex-start;
+}
+.container-entrada-imagen-penultima figure {
+  justify-content: flex-start;
+  margin: 0px;
+}
+.blog div article {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.blog-article {
+  justify-content: flex-start;
+}
+.blog-image {
+  width: 100%;
+  height: 100%;
+  background-image: url("../imagenes/parfait-de-chocolate-y-sorbete-de-mandarina.jpg");
+  background-size: cover;
+}
+
+.blog-article {
+  display: flex;
+  height: 240px;
+}
+.blog-article.ultima {
+  align-self: flex-start;
+}
+.blog-article.penultima {
+  justify-content: flex-end;
+}
+.blog-article.antepenultima {
+  justify-content: start;
+  align-self: flex-end;
+}
+
+.newsletter {
+  margin: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.newsletter-title {
+  text-align: center;
+}
+form.newsletter {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.newsletter label {
+  padding: 20px 30px;
+  font-size: 24px;
+}
+.newsletter input {
+  padding: 20px 40px;
+  border-radius: 100px;
+  border: 1px solid black;
+  outline: none;
+  font-size: large;
+}
+.newsletter input:hover {
+  box-shadow: 0 1px 6px 0 gray;
+}
+.newsletter button {
+  padding: 20px 20px;
+  background-color: #ffab3d;
+  color: white;
+  border: 1px solid;
+  border-radius: 100px;
+  outline: none;
+  text-transform: uppercase;
+}
+.footer {
+  color: white;
+  background-color: gray;
+  display: flex;
+  height: 120px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.footer a {
+  text-decoration: none;
+  color: white;
+}
